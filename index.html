@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-  /* CSS to create flashing background colors */
-  body {
-    animation: colorChange 5s linear infinite;
-    text-align: center;
-  }
-
-  @keyframes colorChange {
-    0% { background-color: red; }
-    20% { background-color: orange; }
-    40% { background-color: yellow; }
-    60% { background-color: green; }
-    80% { background-color: blue; }
-    100% { background-color: purple; }
-  }
-
-  /* CSS to create a flashing dog emoji */
-  .dog {
-    font-size: 100px;
-    animation: dogFlash 1s alternate infinite;
-  }
-
-  @keyframes dogFlash {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fart.com</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #FFF;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            padding: 100px;
+        }
+        .spinner {
+            animation: spin 4s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-  <div class="dog">🐶</div>
+    <div class="content">
+        <h1>Welcome to <span class="spinner">Fart.com</span>!</h1>
+        <p>Anything is possible at Fart.com. The only limit is yourself.</p>
+    </div>
 </body>
 </html>
